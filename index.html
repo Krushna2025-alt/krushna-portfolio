@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Krushna Thakare | FABLAB Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">FABLAB<span>.</span></div>
+    <div class="loader-track"><div class="loader-bar" id="loaderBar"></div></div>
+    <div class="loader-pct" id="loaderPct">0%</div>
+  </div>
+
+  <!-- ANIMATED BG CANVAS -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-brand">FABLAB.</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#modules">Modules</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mobMenu">
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#education" onclick="closeMob()">Education</a>
+    <a href="#modules" onclick="closeMob()">Modules</a>
+    <a href="#projects" onclick="closeMob()">Projects</a>
+    <a href="#contact" onclick="closeMob()">Contact</a>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-badge"><span class="pulse-ring"></span>FABLAB · SSGMCE Shegaon</div>
+      <h1 class="hero-title">
+        <span class="title-row">KRUSHNA</span>
+        <span class="title-row glow-text">THAKARE</span>
+      </h1>
+      <p class="hero-role">Computer Science &amp; Engineering</p>
+      <p class="hero-desc">Crafting modern web experiences with <span class="code-tag">HTML</span> <span class="code-tag">CSS</span> <span class="code-tag">JavaScript</span></p>
+      <div class="hero-actions">
+        <a href="resume.pdf" download class="btn-glow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="#modules" class="btn-outline">Explore Modules <span>→</span></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="profile-orb">
+        <div class="orb-ring r1"></div>
+        <div class="orb-ring r2"></div>
+        <div class="orb-ring r3"></div>
+        <div class="orb-core">
+          <img src="myphoto.jpeg" style="width:64px;height:64px;object-fit:cover;border-radius:50%;" alt="Krushna"/>
+          <div class="orb-name">Krushna Thakare</div>
+          <div class="orb-sub">CSE · FABLAB</div>
+        </div>
+        <div class="orb-chip chip1"><span>🌐</span>Web Dev</div>
+        <div class="orb-chip chip2"><span>🎨</span>Sketch</div>
+        <div class="orb-chip chip3"><span>⚙️</span>C Lang</div>
+        <div class="orb-chip chip4"><span>🎬</span>Editing</div>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section about-sec" id="about">
+    <div class="sec-label">01 — About</div>
+    <h2 class="sec-title">Who Am <em>I?</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm <strong>Krushna Umakant Thakare</strong>, a passionate B.E. Computer Science student at <strong>SSGMCE Shegaon</strong>. Currently enrolled in the <strong>Digital FABLAB</strong> program where I explore cutting-edge digital fabrication technologies.</p>
+        <p>Every single day I write code, experiment, break things and rebuild them — because that's how real learning happens. My mission is to build meaningful digital products that make an impact.</p>
+        <div class="skills-block">
+          <div class="skill-col">
+            <h4>Technical Skills</h4>
+            <div class="tag-row">
+              <span class="tag tech">HTML</span>
+              <span class="tag tech">CSS</span>
+              <span class="tag tech">JavaScript</span>
+              <span class="tag tech">C Language</span>
+            </div>
+          </div>
+          <div class="skill-col">
+            <h4>Creative Skills</h4>
+            <div class="tag-row">
+              <span class="tag creative">Sketch Artist</span>
+              <span class="tag creative">Video Editing</span>
+              <span class="tag creative">Content Creation</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-links">
+          <a href="mailto:krishnathakare300@gmail.com" class="alink">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+            krishnathakare300@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/Krushna-thakare" target="_blank" class="alink">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/Krushna-thakare
+          </a>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="acard-glow"></div>
+        <div class="acard-top">
+          <div class="acard-avatar">KT</div>
+          <div>
+            <div class="acard-name">Krushna Umakant Thakare</div>
+            <div class="acard-role">FABLAB Student · CSE</div>
+          </div>
+        </div>
+        <div class="acard-divider"></div>
+        <div class="acard-stats">
+          <div class="astat"><div class="astat-n">8</div><div class="astat-l">Days Done</div></div>
+          <div class="astat"><div class="astat-n">1</div><div class="astat-l">Module</div></div>
+          <div class="astat"><div class="astat-n">1</div><div class="astat-l">Project</div></div>
+        </div>
+        <div class="acard-contact">
+          <div>📧 krishnathakare300@gmail.com</div>
+          <div>📞 +91 9322500630</div>
+          <div>🏫 SSGMCE, Shegaon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION ══ -->
+  <section class="section edu-sec" id="education">
+    <div class="sec-label">02 — Education</div>
+    <h2 class="sec-title">My <em>Journey</em></h2>
+    <div class="edu-line">
+
+      <div class="edu-item reveal">
+        <div class="edu-dot active-dot"></div>
+        <div class="edu-card">
+          <div class="edu-card-glow"></div>
+          <div class="edu-year">2023 – Present</div>
+          <h3>B.E. Computer Science &amp; Engineering</h3>
+          <p>Shri Sant Gajanan Maharaj College of Engineering, Shegaon</p>
+          <span class="edu-pill pursuing">Currently Pursuing</span>
+        </div>
+      </div>
+
+      <div class="edu-item reveal">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-year">XII · HSC</div>
+          <h3>Higher Secondary Certificate</h3>
+          <p>Shri Sohamnath Viddhyalaya, Asola</p>
+          <span class="edu-pill marks">85.17%</span>
+        </div>
+      </div>
+
+      <div class="edu-item reveal">
+        <div class="edu-dot"></div>
+        <div class="edu-card">
+          <div class="edu-year">X · SSC</div>
+          <h3>Secondary School Certificate</h3>
+          <p>LSPM High School, Dhamani Manora</p>
+          <span class="edu-pill gold">94.60%</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ MODULES ══ -->
+  <section class="section mod-sec" id="modules">
+    <div class="sec-label">03 — Modules</div>
+    <h2 class="sec-title">Learning <em>Modules</em></h2>
+    <p class="sec-desc">Exploring cutting-edge digital fabrication at FABLAB · SSGMCE</p>
+    <div class="mod-grid">
+
+      <div class="mod-card active-mod" onclick="openMod()">
+        <div class="mod-glow"></div>
+        <div class="mod-top">
+          <span class="mod-num">01</span>
+          <span class="mod-live"><span class="live-dot"></span>In Progress</span>
+        </div>
+        <h3>Web Development</h3>
+        <p>HTML5 · CSS3 · JavaScript</p>
+        <div class="mod-prog">
+          <div class="prog-track"><div class="prog-fill" style="width:80%"></div></div>
+          <span>8 / 10 days</span>
+        </div>
+        <div class="mod-cta">Explore Module →</div>
+      </div>
+
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">02</span><span>🔒</span></div><h3>CAD Design</h3><p>2D/3D modeling</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">03</span><span>🔒</span></div><h3>3D Printing</h3><p>Additive manufacturing</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">04</span><span>🔒</span></div><h3>Laser Cutting</h3><p>Precision cutting</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">05</span><span>🔒</span></div><h3>Embedded Systems</h3><p>Microcontrollers</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">06</span><span>🔒</span></div><h3>PCB Design</h3><p>Circuit board design</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">07</span><span>🔒</span></div><h3>Internet of Things</h3><p>Smart systems</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">08</span><span>🔒</span></div><h3>Java Programming</h3><p>OOP & applications</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">09</span><span>🔒</span></div><h3>Networking</h3><p>Protocols & systems</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">10</span><span>🔒</span></div><h3>AI / ML</h3><p>Artificial Intelligence</p></div>
+
+    </div>
+  </section>
+
+  <!-- ══ WEB DEV DETAIL ══ -->
+  <section class="webdet" id="webdet">
+    <div class="webdet-inner">
+      <button class="back-btn" onclick="closeMod()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M5 12l7 7M5 12l7-7"/></svg>
+        Back to Modules
+      </button>
+      <div class="sec-label">03.01 — Web Development</div>
+      <h2 class="sec-title">Daily <em>Progress</em></h2>
+      <div class="det-prog">
+        <div class="prog-track wide"><div class="prog-fill" style="width:80%"></div></div>
+        <span class="mono-text">8 of 10 days completed</span>
+      </div>
+      <div class="days-grid">
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 01</div>
+          <h3>Basic HTML</h3>
+          <p>Learned <code>p</code>, <code>br</code>, <code>head</code>, <code>title</code>, <code>ul</code>, <code>ol</code> tags and basic document structure.</p>
+          <div class="day-img-wrap" onclick="openLB('day1.png')">
+            <img src="day1.png" alt="Day 1"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 02</div>
+          <h3>Media &amp; Links</h3>
+          <p>Explored <code>img</code>, <code>audio</code>, <code>video</code>, <code>table</code>, and <code>a href</code> tags.</p>
+          <div class="day-img-wrap" onclick="openLB('day2.jpeg')">
+            <img src="day2.jpeg" alt="Day 2"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 03</div>
+          <h3>HTML Forms</h3>
+          <p>Mastered all form elements — <code>input</code>, <code>select</code>, <code>textarea</code>, <code>radio</code>, <code>checkbox</code>.</p>
+          <div class="day-img-wrap" onclick="openLB('day3.jpeg')">
+            <img src="day3.jpeg" alt="Day 3"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 04</div>
+          <h3>CSS Basics</h3>
+          <p>Studied <code>border</code>, <code>padding</code>, <code>color</code>, text properties, <code>id</code>, <code>class</code> &amp; universal selectors.</p>
+          <div class="day-img-wrap" onclick="openLB('day4.jpeg')">
+            <img src="day4.jpeg" alt="Day 4"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 05</div>
+          <h3>Box Model</h3>
+          <p>Deep dive into <code>margin</code>, <code>border</code>, <code>padding</code>, <code>content</code> — foundation of all CSS layout.</p>
+          <div class="day-img-wrap" onclick="openLB('day56.jpeg')">
+            <img src="day56.jpeg" alt="Day 5"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 06</div>
+          <h3>Flexbox</h3>
+          <p>Learned <code>flex-container</code>, <code>justify-content</code>, <code>align-items</code>, <code>flex-wrap</code> and responsive patterns.</p>
+          <div class="day-img-wrap" onclick="openLB('day56.jpeg')">
+            <img src="day56.jpeg" alt="Day 6"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 07</div>
+          <h3>Flexbox + JS Intro</h3>
+          <p>Revised Flexbox &amp; learned JavaScript basics — variables, arithmetic: <code>addition</code>, <code>subtraction</code>, <code>multiplication</code>, <code>division</code>.</p>
+          <div class="day-img-wrap" onclick="openLB('day7.png')">
+            <img src="day7.png" alt="Day 7"/>
+            <div class="day-img-ov"><span>🔍 Full View</span></div>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 08</div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Learned <code>git init</code>, <code>add</code>, <code>commit</code>, <code>push</code>, branches &amp; how to <strong>deploy a website</strong> using GitHub Pages.</p>
+          <div class="day-no-img">
+            <span class="day-icon">🐙</span>
+            <p>Pushed code to GitHub &amp; deployed live website using GitHub Pages!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLB()">
+    <div class="lb-close">✕</div>
+    <img id="lbImg" src="" alt="screenshot"/>
+  </div>
+
+  <!-- ══ PROJECTS ══ -->
+  <section class="section proj-sec" id="projects">
+    <div class="sec-label">04 — Projects</div>
+    <h2 class="sec-title">My <em>Work</em></h2>
+    <div class="proj-grid">
+      <div class="proj-card reveal" onclick="window.open('https://comforting-flan-c48f67.netlify.app/','_blank')">
+        <div class="proj-glow"></div>
+        <div class="proj-top">
+          <div class="proj-icon">🎮</div>
+          <div class="proj-badge"><span></span>Live</div>
+        </div>
+        <h3>Online Gaming Center</h3>
+        <p>A group project — designed &amp; developed an Online Gaming Center with multiple interactive browser-based games. No downloads, just play!</p>
+        <div class="proj-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Team Project</span>
+        </div>
+        <div class="proj-link">Open Website →</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section contact-sec" id="contact">
+    <div class="sec-label">05 — Contact</div>
+    <h2 class="sec-title">Let's <em>Connect</em></h2>
+    <p class="sec-desc">Open for collaborations, feedback, or a friendly chat!</p>
+    <div class="contact-grid">
+      <a href="mailto:krishnathakare300@gmail.com" class="contact-card reveal">
+        <div class="cc-glow"></div>
+        <div class="cc-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
+        </div>
+        <h4>Email Me</h4>
+        <p>krishnathakare300@gmail.com</p>
+        <span class="cc-cta">Send Email →</span>
+      </a>
+      <a href="https://linkedin.com/in/Krushna-thakare" target="_blank" class="contact-card reveal">
+        <div class="cc-glow li-glow"></div>
+        <div class="cc-icon li-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        <h4>LinkedIn</h4>
+        <p>Connect with me professionally</p>
+        <span class="cc-cta li-cta">View Profile →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">FABLAB.</div>
+    <p>Krushna Umakant Thakare · SSGMCE Shegaon · CSE</p>
+    <p class="footer-copy">© 2025 · Built with HTML · CSS · JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
