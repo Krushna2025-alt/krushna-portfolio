@@ -233,14 +233,26 @@
         </div>
         <div class="mod-cta">Explore Module →</div>
       </div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">03</span><span>🔒</span></div><h3>3D Printing</h3><p>Additive manufacturing</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">04</span><span>🔒</span></div><h3>Laser Cutting</h3><p>Precision cutting</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">05</span><span>🔒</span></div><h3>Embedded Systems</h3><p>Microcontrollers</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">06</span><span>🔒</span></div><h3>PCB Design</h3><p>Circuit board design</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">07</span><span>🔒</span></div><h3>Internet of Things</h3><p>Smart systems</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">08</span><span>🔒</span></div><h3>Java Programming</h3><p>OOP & applications</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">09</span><span>🔒</span></div><h3>Networking</h3><p>Protocols & systems</p></div>
-      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">10</span><span>🔒</span></div><h3>AI / ML</h3><p>Artificial Intelligence</p></div>
+      <div class="mod-card active-mod" onclick="openMod3()">
+        <div class="mod-glow"></div>
+        <div class="mod-top">
+          <span class="mod-num">03</span>
+          <span class="mod-live"><span class="live-dot"></span>Completed</span>
+        </div>
+        <h3>3D & Laser Cutting</h3>
+        <p>Fusion 360 · 3D Modeling · Fabrication</p>
+        <div class="mod-prog">
+          <div class="prog-track"><div class="prog-fill" style="width:70%"></div></div>
+          <span>7 / 10 days</span>
+        </div>
+        <div class="mod-cta">Explore Module →</div>
+      </div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">04</span><span>🔒</span></div><h3>Embedded Systems</h3><p>Microcontrollers</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">05</span><span>🔒</span></div><h3>PCB Design</h3><p>Circuit board design</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">06</span><span>🔒</span></div><h3>Internet of Things</h3><p>Smart systems</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">07</span><span>🔒</span></div><h3>Java Programming</h3><p>OOP & applications</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">08</span><span>🔒</span></div><h3>Networking</h3><p>Protocols & systems</p></div>
+      <div class="mod-card locked-mod"><div class="mod-top"><span class="mod-num">09</span><span>🔒</span></div><h3>AI / ML</h3><p>Artificial Intelligence</p></div>
 
     </div>
   </section>
@@ -496,9 +508,115 @@
   </div>
 </div>
 
+  <!-- ══ 3D & LASER CUTTING DETAIL ══ -->
+  <section class="webdet" id="mod3det" style="display:none;">
+    <div class="webdet-inner">
+      <button class="back-btn" onclick="closeMod3()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M5 12l7 7M5 12l7-7"/></svg>
+        Back to Modules
+      </button>
+      <div class="sec-label">03.03 — 3D & Laser Cutting</div>
+      <h2 class="sec-title">Daily <em>Progress</em></h2>
+      <div class="det-prog">
+        <div class="prog-track wide"><div class="prog-fill" style="width:70%"></div></div>
+        <span class="mono-text">7 of 10 days completed</span>
+      </div>
+      <div class="days-grid">
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 01</div>
+          <h3>Basic Learning</h3>
+          <p>Learned basics of <strong>Line</strong>, <strong>Circle</strong>, <strong>Square</strong>, <strong>Spline</strong> &amp; Line tools in Fusion 360.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('fday_1.f3d')">
+            <span class="day-icon">📦</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 02</div>
+          <h3>Modify Parts</h3>
+          <p>Practiced <strong>Fillet</strong>, <strong>Offset</strong>, and <strong>Blending</strong> — modify tools in Fusion 360 sketching.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('day-2.f3d')">
+            <span class="day-icon">📦</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 03</div>
+          <h3>3D Bodies</h3>
+          <p>Learned <strong>Extrude</strong>, <strong>Join Body</strong>, <strong>Cut Body</strong>, and creating <strong>New Body</strong> operations.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('day_3.f3d')">
+            <span class="day-icon">📦</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 04</div>
+          <h3>Making 3D Gear</h3>
+          <p>Designed a complete <strong>3D Gear</strong> model using advanced Fusion 360 techniques.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('DAY4GEAR_stl.f3d')">
+            <span class="day-icon">⚙️</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 05</div>
+          <h3>3D Practice</h3>
+          <p>Practiced all learned 3D modeling skills — revision and refinement session.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('day-5.f3d')">
+            <span class="day-icon">📦</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 06</div>
+          <h3>Mini Project — Power Button</h3>
+          <p>Created a <strong>Power Button</strong> 3D model as a mini project using all skills learned so far.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('day-6.f3d')">
+            <span class="day-icon">🔘</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+        <div class="day-card reveal">
+          <div class="day-num">Day 07</div>
+          <h3>Final Project — Duster Box</h3>
+          <p>Final Project: Designed a <strong>Duster Dust Removal Box</strong> — a complete functional 3D model from scratch.</p>
+          <div class="day-no-img" style="cursor:pointer;" onclick="downloadF3d('final_project.f3d')">
+            <span class="day-icon">🏆</span>
+            <p>Click to Download .f3d File →</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
   <script>
-    function openMod2() {
+    function openMod3() {
+      document.getElementById('modules').style.display = 'none';
+      document.getElementById('mod3det').style.display = 'block';
+      document.getElementById('mod3det').scrollIntoView({behavior:'smooth'});
+    }
+    function closeMod3() {
+      document.getElementById('mod3det').style.display = 'none';
+      document.getElementById('modules').style.display = '';
+      document.getElementById('modules').scrollIntoView({behavior:'smooth'});
+    }
+    function downloadF3d(filename) {
+      const a = document.createElement('a');
+      a.href = filename;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
       document.getElementById('modules').style.display = 'none';
       document.getElementById('uiuxdet').style.display = 'block';
       document.getElementById('uiuxdet').scrollIntoView({behavior:'smooth'});
