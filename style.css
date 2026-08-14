@@ -582,6 +582,37 @@ body.cursor-hover .cursor-ring { width: 52px; height: 52px; border-color: rgba(9
 .day-icon { font-size: 36px; }
 .day-no-img p { font-size: 14px; color: var(--muted); }
 
+/* ── JAVA CODE PREVIEW ─────────────────────── */
+.day-code {
+  background: #0b0d16; border: 1px solid var(--border);
+  border-radius: 12px; padding: 14px 16px;
+  font-family: var(--font-m); font-size: 12px; line-height: 1.7;
+  color: #d8e2f0; overflow-x: auto; white-space: pre;
+  max-height: 210px; overflow-y: auto;
+}
+.day-code .kw   { color: #c792ea; }
+.day-code .typ  { color: #82aaff; }
+.day-code .str  { color: #c3e88d; }
+.day-code .cmt  { color: #6b7280; }
+.day-code::-webkit-scrollbar { width: 6px; height: 6px; }
+.day-code::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 100px; }
+
+/* ── FINAL PROJECT CARD ────────────────────── */
+.day-card.final-proj {
+  border: 1px solid rgba(168,85,247,0.35);
+  background: linear-gradient(135deg, rgba(168,85,247,0.07) 0%, var(--bg3) 65%);
+  position: relative;
+}
+.day-card.final-proj:hover { border-color: rgba(168,85,247,0.6); box-shadow: 0 16px 48px rgba(168,85,247,0.12); }
+.final-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-m); font-size: 11px; letter-spacing: .5px;
+  color: #d8b4fe; background: rgba(168,85,247,0.12);
+  border: 1px solid rgba(168,85,247,0.3);
+  padding: 4px 10px; border-radius: 100px;
+  margin-bottom: 12px;
+}
+
 /* ── LIGHTBOX ──────────────────────────────── */
 .lightbox {
   display: none; position: fixed; inset: 0; z-index: 2000;
